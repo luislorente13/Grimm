@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRIMM</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!--CABECERA-->
+    <header>
+        <h1>Base de datos de Wessens</h1>
+    </header>
+
+    <!--FORMULARIO-->
+    <div class="formulario">
+        <form action="" id="form">
+            <h4 class="titulo">Datos de los wessens</h4>
+            
+            <!--NOMBRE-->
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre">
+
+            <br><br>
+
+            <!--FOTO-->
+            <label for="foto">Foto: </label>
+            <input type="text" id="foto" name="foto">
+
+            <br><br>
+
+            <!--TIPO-->
+            <label for="tipo">Tipo: </label>
+            
+            <select name="tipo" id="tipo">
+                <option value=""></option>
+                <option value="Lobo">Lobo</option>
+                <option value="Cánido">Cánido</option>
+                <option value="Felino">Felino</option>
+                <option value="Cerdo">Cerdo</option>
+                <option value="Reptil">Reptil</option>
+                <option value="Insecto">Insecto</option>
+                <option value="Anfibio">Anfibio</option>
+                <option value="Ave">Ave</option>
+                <option value="Monstruo">Monstruo</option>
+            </select>
+
+            <br><br>
+
+            <!--PELIGROSIDAD-->
+            <label for="peligrosidad">Peligrosidad: </label>
+            
+            <br><br>
+
+            <label for="pacifico">Pacífico</label>
+            <input type="radio" id="pacifico" name="peligrosidad" value="Pacífico">
+
+            <label for="neutral">Neutral</label>
+            <input type="radio" id="neutral" name="peligrosidad" value="Neutral">
+
+            <label for="pacifico">Peligroso</label>
+            <input type="radio" id="peligroso" name="peligrosidad" value="Peligroso">
+
+            <label for="violento">Violento</label>
+            <input type="radio" id="violento" name="peligrosidad" value="Violento">
+
+            <br><br>
+
+            <!--ASPECTO-->
+            <label for="aspecto">Aspecto: </label>
+            
+            <br>
+
+            <textarea name="aspecto" id="aspecto" cols="30" rows="10"></textarea>
+
+            <br><br>
+
+            <!--NOTAS-->
+            <label for="notas">Notas para el cazador: </label>
+            
+            <br>
+
+            <textarea name="notas" id="notas" cols="30" rows="10"></textarea>
+        </form>
+    </div>
+    <!--MOSTRAR CONTENIDO ARRAY-->
+    <div class="wessen">
+        <h4 class="titulo">Wessens registrados</h4>
+        <ul id="lista"></ul>
+    </div>
+    
+     <!--BOTONES-->
+    <div class="boton">
+        <button id="agregar" name="agregar" onclick="agregarWesen()">Registrar Wessen</button>  
+        <button id="modificar" name="modificar" onclick="modificarWesen()">Actualizar Wessen</button>
+        <button id="eliminar" name="eliminar" onclick="borrarWesen()">Eliminar Wessen</button>
+        <button id="limpiar" name="limpiar" onclick="limpiarFormulario()">Limpiar formulario</button>
+    </div> 
+</body> 
+</html>

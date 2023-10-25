@@ -1,0 +1,84 @@
+
+/*  PÁGINA  */
+header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: darkgray;
+}
+
+body {background-color: lightgray;}
+
+/*  FORMULARIO  */
+.titulo {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    height: 15px;
+}
+
+.formulario {
+    float: right;
+    width: 49%;
+    text-align: center;
+}
+
+form {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+textarea {resize: none; height: 100px;}
+
+input, textarea {font-weight: bold;}
+
+
+/*  ARRAY WESSEN  */
+.wessen {
+    float: left;
+    width: 45%;
+    margin-left: 10px;
+}
+
+.wessen ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wessen li {
+    list-style: none;
+}
+
+.wessen img {margin-right: 5px;}
+
+.morado {color: blueviolet;}
+
+.rojo {color: red;}
+
+.verde {color: green;}
+
+.texto {color: black;}
+
+img:hover {border: 2px solid red;}
+
+img {cursor: pointer;}
+
+li p {
+
+    text-align: center;
+}
+
+/*  BOTONES  */
+.boton {
+    clear: both;
+    text-align: center;
+    background-color: darkgray;
+}
+
+button {
+    font-weight: bold;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
